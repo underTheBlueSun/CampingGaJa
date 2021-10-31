@@ -11,7 +11,8 @@ import SwiftUI
 struct CampingGaJaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            SearchDefaultRealm()
         }
     }
 }
