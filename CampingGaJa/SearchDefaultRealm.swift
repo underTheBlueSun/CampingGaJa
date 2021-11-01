@@ -3,7 +3,7 @@
 //  UriBan
 //
 //  Created by underTheBlueSun on 2021/01/22.
-//
+//  수정함...
 
 import SwiftUI
 import RealmSwift
