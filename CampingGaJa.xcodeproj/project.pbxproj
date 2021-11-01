@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		156D58B5272E52A4003F3A9C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 156D58B4272E52A4003F3A9C /* Realm */; };
 		156D58B7272E52A4003F3A9C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 156D58B6272E52A4003F3A9C /* RealmSwift */; };
+		156D58BB27309E8C003F3A9C /* gocamping 1~500.json in Resources */ = {isa = PBXBuildFile; fileRef = 156D58BA27309E8B003F3A9C /* gocamping 1~500.json */; };
+		156D58BD27309ECF003F3A9C /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58BC27309ECF003F3A9C /* BundleExtension.swift */; };
+		156D58BF27309F1B003F3A9C /* JsonUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58BE27309F1B003F3A9C /* JsonUpload.swift */; };
+		156D58C327309FD7003F3A9C /* BasicInfo01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D58C227309FD7003F3A9C /* BasicInfo01.swift */; };
 		157018DB272E3109009DA3F0 /* CampingGaJaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157018DA272E3109009DA3F0 /* CampingGaJaApp.swift */; };
 		157018DD272E3109009DA3F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157018DC272E3109009DA3F0 /* ContentView.swift */; };
 		157018DF272E310A009DA3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157018DE272E310A009DA3F0 /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156D58BA27309E8B003F3A9C /* gocamping 1~500.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gocamping 1~500.json"; sourceTree = "<group>"; };
+		156D58BC27309ECF003F3A9C /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		156D58BE27309F1B003F3A9C /* JsonUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUpload.swift; sourceTree = "<group>"; };
+		156D58C227309FD7003F3A9C /* BasicInfo01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfo01.swift; sourceTree = "<group>"; };
 		157018D7272E3109009DA3F0 /* CampingGaJa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampingGaJa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157018DA272E3109009DA3F0 /* CampingGaJaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingGaJaApp.swift; sourceTree = "<group>"; };
 		157018DC272E3109009DA3F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +70,10 @@
 				157018DE272E310A009DA3F0 /* Assets.xcassets */,
 				157018E0272E310A009DA3F0 /* Preview Content */,
 				157018ED272E3D91009DA3F0 /* SearchDefaultRealm.swift */,
+				156D58BA27309E8B003F3A9C /* gocamping 1~500.json */,
+				156D58BC27309ECF003F3A9C /* BundleExtension.swift */,
+				156D58BE27309F1B003F3A9C /* JsonUpload.swift */,
+				156D58C227309FD7003F3A9C /* BasicInfo01.swift */,
 			);
 			path = CampingGaJa;
 			sourceTree = "<group>";
@@ -139,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156D58BB27309E8C003F3A9C /* gocamping 1~500.json in Resources */,
 				157018E2272E310A009DA3F0 /* Preview Assets.xcassets in Resources */,
 				157018DF272E310A009DA3F0 /* Assets.xcassets in Resources */,
 			);
@@ -153,7 +166,10 @@
 			files = (
 				157018DD272E3109009DA3F0 /* ContentView.swift in Sources */,
 				157018EE272E3D91009DA3F0 /* SearchDefaultRealm.swift in Sources */,
+				156D58BF27309F1B003F3A9C /* JsonUpload.swift in Sources */,
 				157018DB272E3109009DA3F0 /* CampingGaJaApp.swift in Sources */,
+				156D58BD27309ECF003F3A9C /* BundleExtension.swift in Sources */,
+				156D58C327309FD7003F3A9C /* BasicInfo01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
