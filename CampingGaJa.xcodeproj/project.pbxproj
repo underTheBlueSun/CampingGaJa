@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156D58B5272E52A4003F3A9C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 156D58B4272E52A4003F3A9C /* Realm */; };
+		156D58B7272E52A4003F3A9C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 156D58B6272E52A4003F3A9C /* RealmSwift */; };
 		157018DB272E3109009DA3F0 /* CampingGaJaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157018DA272E3109009DA3F0 /* CampingGaJaApp.swift */; };
 		157018DD272E3109009DA3F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157018DC272E3109009DA3F0 /* ContentView.swift */; };
 		157018DF272E310A009DA3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157018DE272E310A009DA3F0 /* Assets.xcassets */; };
 		157018E2272E310A009DA3F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157018E1272E310A009DA3F0 /* Preview Assets.xcassets */; };
+		157018EE272E3D91009DA3F0 /* SearchDefaultRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157018ED272E3D91009DA3F0 /* SearchDefaultRealm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,7 @@
 		157018DC272E3109009DA3F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		157018DE272E310A009DA3F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157018E1272E310A009DA3F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		157018ED272E3D91009DA3F0 /* SearchDefaultRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDefaultRealm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156D58B7272E52A4003F3A9C /* RealmSwift in Frameworks */,
+				156D58B5272E52A4003F3A9C /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +61,7 @@
 				157018DC272E3109009DA3F0 /* ContentView.swift */,
 				157018DE272E310A009DA3F0 /* Assets.xcassets */,
 				157018E0272E310A009DA3F0 /* Preview Content */,
+				157018ED272E3D91009DA3F0 /* SearchDefaultRealm.swift */,
 			);
 			path = CampingGaJa;
 			sourceTree = "<group>";
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = CampingGaJa;
+			packageProductDependencies = (
+				156D58B4272E52A4003F3A9C /* Realm */,
+				156D58B6272E52A4003F3A9C /* RealmSwift */,
+			);
 			productName = CampingGaJa;
 			productReference = 157018D7272E3109009DA3F0 /* CampingGaJa.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 157018CE272E3109009DA3F0;
+			packageReferences = (
+				156D58B3272E52A4003F3A9C /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 157018D8272E3109009DA3F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				157018DD272E3109009DA3F0 /* ContentView.swift in Sources */,
+				157018EE272E3D91009DA3F0 /* SearchDefaultRealm.swift in Sources */,
 				157018DB272E3109009DA3F0 /* CampingGaJaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +356,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		156D58B3272E52A4003F3A9C /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		156D58B4272E52A4003F3A9C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156D58B3272E52A4003F3A9C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		156D58B6272E52A4003F3A9C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156D58B3272E52A4003F3A9C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 157018CF272E3109009DA3F0 /* Project object */;
 }
