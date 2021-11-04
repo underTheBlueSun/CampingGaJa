@@ -18,6 +18,10 @@
 		157018DF272E310A009DA3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157018DE272E310A009DA3F0 /* Assets.xcassets */; };
 		157018E2272E310A009DA3F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157018E1272E310A009DA3F0 /* Preview Assets.xcassets */; };
 		157018EE272E3D91009DA3F0 /* SearchDefaultRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157018ED272E3D91009DA3F0 /* SearchDefaultRealm.swift */; };
+		FABC5E942733AD9E000C067A /* jsontest01.json in Resources */ = {isa = PBXBuildFile; fileRef = FABC5E932733AD9E000C067A /* jsontest01.json */; };
+		FABC5E962733AF2C000C067A /* BasicInfo02.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC5E952733AF2C000C067A /* BasicInfo02.swift */; };
+		FABC5E982733B253000C067A /* BasicTest01.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC5E972733B253000C067A /* BasicTest01.swift */; };
+		FABC5E9A2733B2B0000C067A /* jsontest02.json in Resources */ = {isa = PBXBuildFile; fileRef = FABC5E992733B2B0000C067A /* jsontest02.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		157018DE272E310A009DA3F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157018E1272E310A009DA3F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		157018ED272E3D91009DA3F0 /* SearchDefaultRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDefaultRealm.swift; sourceTree = "<group>"; };
+		FABC5E932733AD9E000C067A /* jsontest01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsontest01.json; sourceTree = "<group>"; };
+		FABC5E952733AF2C000C067A /* BasicInfo02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfo02.swift; sourceTree = "<group>"; };
+		FABC5E972733B253000C067A /* BasicTest01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTest01.swift; sourceTree = "<group>"; };
+		FABC5E992733B2B0000C067A /* jsontest02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsontest02.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,10 @@
 				156D58BC27309ECF003F3A9C /* BundleExtension.swift */,
 				156D58BE27309F1B003F3A9C /* JsonUpload.swift */,
 				156D58C227309FD7003F3A9C /* BasicInfo01.swift */,
+				FABC5E932733AD9E000C067A /* jsontest01.json */,
+				FABC5E952733AF2C000C067A /* BasicInfo02.swift */,
+				FABC5E972733B253000C067A /* BasicTest01.swift */,
+				FABC5E992733B2B0000C067A /* jsontest02.json */,
 			);
 			path = CampingGaJa;
 			sourceTree = "<group>";
@@ -153,6 +165,8 @@
 			files = (
 				156D58BB27309E8C003F3A9C /* gocamping 1~500.json in Resources */,
 				157018E2272E310A009DA3F0 /* Preview Assets.xcassets in Resources */,
+				FABC5E9A2733B2B0000C067A /* jsontest02.json in Resources */,
+				FABC5E942733AD9E000C067A /* jsontest01.json in Resources */,
 				157018DF272E310A009DA3F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,8 +182,10 @@
 				157018EE272E3D91009DA3F0 /* SearchDefaultRealm.swift in Sources */,
 				156D58BF27309F1B003F3A9C /* JsonUpload.swift in Sources */,
 				157018DB272E3109009DA3F0 /* CampingGaJaApp.swift in Sources */,
+				FABC5E962733AF2C000C067A /* BasicInfo02.swift in Sources */,
 				156D58BD27309ECF003F3A9C /* BundleExtension.swift in Sources */,
 				156D58C327309FD7003F3A9C /* BasicInfo01.swift in Sources */,
+				FABC5E982733B253000C067A /* BasicTest01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

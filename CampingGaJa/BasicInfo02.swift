@@ -8,7 +8,7 @@
 import SwiftUI
 import RealmSwift
 
-class BasicInfo01: Object,Identifiable, Codable{
+class BasicInfo02: Object,Identifiable, Codable{
     @objc dynamic var uuid: String = UUID().uuidString
     @objc dynamic var addr1: String
     @objc dynamic var animalCmgCl: String
@@ -17,7 +17,7 @@ class BasicInfo01: Object,Identifiable, Codable{
     @objc dynamic var caravSiteCo: String
     @objc dynamic var doNm: String
     @objc dynamic var facltNm: String
-    @objc dynamic var firstImageUrl: String
+    @objc dynamic var firstImageUrl: String?
     @objc dynamic var glampSiteCo: String
     @objc dynamic var gnrlSiteCo: String
     @objc dynamic var homepage: String?

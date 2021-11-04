@@ -10,7 +10,8 @@ import RealmSwift
 
 final class JsonUpload: ObservableObject {
   
-  @Published var curriculums: [Curriculum03] = []
+//  @Published var basicinfos: [BasicInfo02] = []
+    @Published var basicinfos: [BasicTest01] = []
 //  @Published var anps: [ANP03] = []
     
   @State private var isUploaded = UserDefaults.standard.bool(forKey: "Upload")
@@ -20,21 +21,22 @@ final class JsonUpload: ObservableObject {
         
         if isUploaded == true { // 테스트용
 //        if isUploaded == false { // 실제용
-            self.curriculums = Bundle.main.decode(filename: "CurriculumData.json", as: [Curriculum03].self)
+//            self.basicinfos = Bundle.main.decode(filename: "gocamping 1~500.json", as: [BasicInfo01].self)
+            self.basicinfos = Bundle.main.decode(filename: "jsontest02.json", as: [BasicTest01].self)
 //            self.anps = Bundle.main.decode(filename: "ANPData.json", as: [ANP03].self)
-            addCurriData()
+            addBasicInfo()
 //            addANPData()
         }
   }
     
-    func addCurriData() {
+    func addBasicInfo() {
         guard let dbRef = try? Realm() else { return }
         try? dbRef.write {
-            for curriculum in curriculums {
-                dbRef.add(curriculum)
+            for basicinfo in basicinfos {
+                dbRef.add(basicinfo)
             }
-            // curriculum json 모두 업로드한 후 userdefaults에 저장
-//            UserDefaults.standard.set(true, forKey: "Upload")
+//             curriculum json 모두 업로드한 후 userdefaults에 저장
+            UserDefaults.standard.set(true, forKey: "Upload")
         } // try? dbRef.write
     }
     
