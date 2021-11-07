@@ -11,7 +11,7 @@ import RealmSwift
 final class JsonUpload: ObservableObject {
   
 //  @Published var basicinfos: [BasicInfo02] = []
-    @Published var basicinfos: [BasicTest01] = []
+    @Published var basicinfos: [BasicInfo04] = []
 //  @Published var anps: [ANP03] = []
     
   @State private var isUploaded = UserDefaults.standard.bool(forKey: "Upload")
@@ -22,7 +22,7 @@ final class JsonUpload: ObservableObject {
         if isUploaded == true { // 테스트용
 //        if isUploaded == false { // 실제용
 //            self.basicinfos = Bundle.main.decode(filename: "gocamping 1~500.json", as: [BasicInfo01].self)
-            self.basicinfos = Bundle.main.decode(filename: "jsontest02.json", as: [BasicTest01].self)
+            self.basicinfos = Bundle.main.decode(filename: "gocamping 1~500.json", as: [BasicInfo04].self)
 //            self.anps = Bundle.main.decode(filename: "ANPData.json", as: [ANP03].self)
             addBasicInfo()
 //            addANPData()
